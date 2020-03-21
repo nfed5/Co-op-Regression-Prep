@@ -1,0 +1,44 @@
+Linear Regression - a linear approximation of a casual relationship between two or more variables
+
+Regression Process
+1) Get Sample Data
+2) Design a model that works for that sample
+3) Make predictions for the whole population
+
+Dependent variable (Y) - is predicted
+Independent variables (Xs) - are predictors
+
+Y is a function of Xs - Y = F(X1,X2,...Xk)
+
+Simple Linear Regression Model
+
+y^ = bo + b1x1 + e
+
+y^ = prediction
+bo = Constant
+b1 = coefficient, quantifies the relationship between x1 and y
+x1 = predictor
+e = error of estimation
+
+Simple Linear Regression Model Example
+
+Income = bo + 5000Education + e
+
+In this model: 
+- For every additional year of education, Income is expected to increase by $5,000
+- Bo equals the amount of Income if you had zero years of education
+- error is the difference between observed income and the income the regression predicted
+- on average, across all oberservations, the error is 0
+- if you earn more than what the regression predicted, someone earns less, they even out
+
+Correlation v. Regression
+- Correlation measures the relationship between two variables and how they move together
+- Regression measures how one variable affects another
+- Correlation does not imply causation!!
+
+Covariance - extent to which two random variables move together (+ number means they move in same direction, 
+negative number means opposite directions)
+Correlation - strength of relationship between two variables (+1 strong positive correlation, -1 strong negative correlation)
+
+
+
