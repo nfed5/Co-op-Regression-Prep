@@ -2,3 +2,4 @@
 1. Sklearn Linear Regression
 2. Statsmodel Linear Regression
 3. Sklearn Logistic Regression
+4. PostgreSQL + Python Syntax
