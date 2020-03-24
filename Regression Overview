@@ -41,4 +41,39 @@ negative number means opposite directions)
 Correlation - strength of relationship between two variables (+1 strong positive correlation, -1 strong negative correlation)
 
 
+R^2 = SSR (variability explained by the regression) / TSS (total variability of the data)
+R^2 values range from 0 to 1
+0 = regression explains none of the variability in the data
+1 = regression explains all of the variability in the data
+Ex. College GPA = 0.275 + 0.0017SAT model has an R^2 of 0.41
+- this means SAT score explains 41% of the variability of GPAs in the sample data set
 
+Adjusted R^2 penalizes adding new variables to the model that do not provide additional explanatory power
+- it is the basis for comparing two models with the same dependent variable(y) and same dataset
+
+**** 5 OLS Assumptions ****
+1) Linearity 
+    - equation is linear (each independent variable is multiplied by a coefficient and summed up to predict the value of y)
+    - How to check for linearity? (plot each independent variable (x) against the dependent variable (y) on a scatter plot and see if 
+    the relationship resembles a straight line)
+    - What if the relationship is non-linear? (the plot requires a curved line) 
+    - Fixes? 
+    1. Run a non-linear regression (logistic regression)
+    2. Transform the relationship to make it linear (Exponential transformation, Log transformation)
+ 2) No Endogeneity
+    - there cannot be a link between the independent variables and the errors (diff between observed values and predicted values)
+    - Omitted Variable Bias (introduced to the model when you forget to include a relevant variable)
+    - Covariance between Xs and the error != 0 (they move together)
+    Y is explained (somewhat correlated) by Xs
+    Y is also explained (somewhat correlated) by omitted X* 
+    At least one X is likely correlated with X*
+    (Anything you don't explain with the model goes into the error)
+    Thus, the error becomes correlated with the Xs
+    - Omitted Variable Bias is a tough problem
+    - Questions to ask are:
+    1. What variables could impact the dependent variable but are not included in the model?
+    2. Are those variables likely to be correlated to the independent variables in the model?
+    3. What are the signs of the correlations? Upward or downward bias?
+  3) Normality and Homoscedasticity
+    - 
+    
