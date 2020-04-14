@@ -75,5 +75,26 @@ Adjusted R^2 penalizes adding new variables to the model that do not provide add
     2. Are those variables likely to be correlated to the independent variables in the model?
     3. What are the signs of the correlations? Upward or downward bias?
   3) Normality and Homoscedasticity
-    - 
-    
+    - Assume normal distribution of errors
+    - For large data sets Central Limit Theorem applies (we can take normality as given as long as we have good amount of data)
+    - Homoscedasticity means to have equal variance of the error term
+    - Heteroscedasticity implies the model would have a better prediction for smaller values than bigger ones (or vice versa)
+    - How to prevent Heteroscedasticity?
+    1. Check for Omitted variable bias
+    2. Look for outliers and drop them
+    3. Use a transformation
+   4) No Autocorrelation
+    - no serial correlation
+    - ex. day of the week effect in stock prices (errors would be biased downwards mondays and upwards fridays)
+    How to detect?
+    1. Plot the data and look for patterns
+    2. Durbin-Watson test (<1 and >3 bad, around 2 = no autocorrelation)
+    Remedy?
+    - No remedy, cannot use linear regression (use autoregressive model)
+   5) No Multicollinearity
+    - occurs when 2 or more variables have a high correlation
+    Fixes?
+    1. Drop one of the two variables
+    2. Transform them into one (e.g. average price)
+    Prevention?
+    - Before running regression find correlation between each two pairs of independent variables
